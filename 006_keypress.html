@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        
+        Isim :
+        <input type="text" id="isim">
+        <br><br>
+        Soyisim :
+        <input type="text" id="soyisim">
+        <br><br>
+
+        <p id="text"></p>
+
+        <script>
+            document.getElementById('isim').focus();
+
+            document.getElementById('isim').onkeypress = e => {
+                console.log(e);
+                if (e.key === 'Enter') {
+                    document.getElementById('soyisim').focus();
+                }
+            }
+
+            document.getElementById('soyisim').onkeypress = e => {
+                
+                if (e.key === 'Enter') {
+                    document.getElementById('text').innerHTML = 'Websitemize Hosgeldiniz';
+                }
+            }
+        
+        </script>
+    </body>
+</html>
+
+<!-- 
+KeyPress event is invoked only for character (printable) keys, 
+KeyDown event is raised for all including nonprintable such as Control, Shift, Alt, BackSpace, etc. -->

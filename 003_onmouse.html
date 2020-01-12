@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+
+    <body>
+        
+        <img id="image" src="bulboff.gif" width="100" height="180">
+
+        <script>
+            document.getElementById('image').onmousedown = (e) => {
+                e.target.src = 'bulbon.gif';
+            }
+
+            document.getElementById('image').onmouseup = (e) => {
+                e.target.src = 'bulboff.gif';
+            }
+        
+        </script>
+    </body>
+</html>
+
+
+
+
+<!-- mousedown x mouseup -->

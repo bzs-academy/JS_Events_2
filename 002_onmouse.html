@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <img id= "image" src="smiley.gif" alt="smiley" width="32" height="32">
+
+
+
+        <script>
+        // document.getElementById('image').addEventListener('mouseover', e => {
+        //     console.log(event.target);
+        //     e.target.style.height = "45px";
+        //     e.target.style.width = "45px";
+           
+        // });
+
+        // document.getElementById('image').addEventListener('mouseout', e => {
+        //     console.log(event.target);
+        //     e.target.style.height = "32px";
+        //     e.target.style.width = "32px";
+           
+        // });
+
+        document.getElementById('image').addEventListener('mouseenter', e => {
+            console.log(e.target);
+            e.target.style.height = "45px";
+            e.target.style.width = "45px";
+           
+        });
+
+        document.getElementById('image').addEventListener('mouseleave', e => {
+            console.log(e.target);
+            e.target.style.height = "32px";
+            e.target.style.width = "32px";
+           
+        });
+
+
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+
+        <img onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="smiley.gif" alt="smiley" width="32" height="32">
+
+
+        <img onmouseover="bigImg(this)" onmouseout="smallImg(this)"src="bulbon.gif" alt="smiley" width="32" height="32">
+
+        <script>
+        
+        function bigImg (x) {
+            console.log(x);
+            x.style.height = "45px";
+            x.style.width = "45px";
+        }
+
+        function smallImg (x) {
+            console.log(x);
+            x.style.height = "32px";
+            x.style.width = "32px";
+        }
+
+
+        </script>
+        
+    </body>
+</html> -->
+
+
+
+<!-- mouseover x mouseout -->
